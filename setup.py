@@ -1,25 +1,18 @@
-# -*- coding: utf-8 -*-
-"""`sphinx_rtd_theme` lives on `Github`_.
-
-.. _github: https://www.github.com/snide/sphinx_rtd_theme
-
-"""
 from setuptools import setup
-from sphinx_rtd_theme import __version__
+from sphinx_shoop_theme import __version__
 
 
 setup(
-    name='sphinx_rtd_theme',
+    name='sphinx_shoop_theme',
     version=__version__,
-    url='https://github.com/snide/sphinx_rtd_theme/',
+    url='https://github.com/snide/sphinx_shoop_theme/',
     license='MIT',
-    author='Dave Snider',
-    author_email='dave.snider@gmail.com',
-    description='ReadTheDocs.org theme for Sphinx, 2013 version.',
+    author='Shoop Ltd (originally by Dave Snider)',
+    description='Sphinx Theme for Shoop',
     long_description=open('README.rst').read(),
     zip_safe=False,
-    packages=['sphinx_rtd_theme'],
-    package_data={'sphinx_rtd_theme': [
+    packages=['sphinx_shoop_theme'],
+    package_data={'sphinx_shoop_theme': [
         'theme.conf',
         '*.html',
         'static/css/*.css',
