@@ -5,9 +5,9 @@ from sphinx_shoop_theme import __version__
 setup(
     name='sphinx_shoop_theme',
     version=__version__,
-    url='https://github.com/snide/sphinx_shoop_theme/',
+    url='https://github.com/shoopio/sphinx_shoop_theme/',
     license='MIT',
-    author='Shoop Ltd (originally by Dave Snider)',
+    author='Shoop Ltd (original by Dave Snider)',
     description='Sphinx Theme for Shoop',
     long_description=open('README.rst').read(),
     zip_safe=False,

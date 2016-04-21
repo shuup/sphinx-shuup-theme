@@ -1,7 +1,8 @@
-"""Sphinx ReadTheDocs theme.
+"""
+Sphinx Shoop theme.
 
-From https://github.com/ryan-roemer/sphinx-bootstrap-theme.
-
+This theme is a fork of Sphinx ReadTheDocs theme from
+https://github.com/snide/sphinx_rtd_theme/.
 """
 import os
 
