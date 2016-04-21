@@ -1,15 +1,30 @@
-from setuptools import setup
-from sphinx_shoop_theme import __version__
+import os
+
+import setuptools
 
 
-setup(
+def _get_version():
+    filepath = os.path.join('sphinx_shoop_theme', '__init__.py')
+    with open(filepath) as fp:
+        for line in fp:
+            if line.startswith("__version__ = '"):
+                return line.strip().split("'", 2)[1]
+    raise EnvironmentError("Cannot detect version from %s" % filepath)
+
+
+def _get_long_description():
+    with open('README.rst') as fp:
+        return fp.read()
+
+
+setuptools.setup(
     name='sphinx_shoop_theme',
-    version=__version__,
+    version=_get_version(),
     url='https://github.com/shoopio/sphinx_shoop_theme/',
     license='MIT',
     author='Shoop Ltd (original by Dave Snider)',
     description='Sphinx Theme for Shoop',
-    long_description=open('README.rst').read(),
+    long_description=_get_long_description(),
     zip_safe=False,
     packages=['sphinx_shoop_theme'],
     package_data={'sphinx_shoop_theme': [

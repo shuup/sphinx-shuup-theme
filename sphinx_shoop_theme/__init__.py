@@ -6,10 +6,10 @@ https://github.com/snide/sphinx_rtd_theme/.
 """
 import os
 
-VERSION = (0, 1, 9)
-
-__version__ = ".".join(str(v) for v in VERSION)
+__version__ = '0.1.9'
 __version_full__ = __version__
+
+VERSION = tuple(int(x) for x in __version__.split('.'))
 
 
 def get_html_theme_path():
