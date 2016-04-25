@@ -103,7 +103,7 @@ module.exports = function(grunt) {
         options: {
           external: ['jquery'],
           alias: {
-            'sphinx-rtd-theme': './js/theme.js'
+            'sphinx-shoop-theme': './js/theme.js'
           }
         },
         src: ['js/*.js'],
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
         options: {
           external: ['jquery'],
           alias: {
-            'sphinx-rtd-theme': './js/theme.js'
+            'sphinx-shoop-theme': './js/theme.js'
           }
         },
         src: ['js/*.js'],
