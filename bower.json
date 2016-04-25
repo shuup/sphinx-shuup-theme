@@ -30,9 +30,9 @@
     "wyrm": "~0.0.x"
   },
   "dependencies": {
-    "lato-googlefont": "*",
     "robotoslab-googlefont": "*",
     "inconsolata-googlefont": "*",
-    "font-awesome": "4.2.0"
+    "font-awesome": "4.2.0",
+    "fira": "^0.1.0"
   }
 }

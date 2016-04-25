@@ -52,7 +52,19 @@ module.exports = function(grunt) {
                     'bower_components/inconsolata-googlefont/Inconsolata-Regular.ttf'],
               dest: 'sphinx_shoop_theme/static/fonts/',
               filter: 'isFile'
-          }
+          },
+          {
+              expand: true,
+              flatten: true,
+              src: ['bower_components/fira/eot/FiraSans-Regular.eot',
+                    'bower_components/fira/ttf/FiraSans-Regular.ttf',
+                    'bower_components/fira/woff/FiraSans-Regular.woff',
+                    'bower_components/fira/eot/FiraSans-Bold.eot',
+                    'bower_components/fira/ttf/FiraSans-Bold.ttf',
+                    'bower_components/fira/woff/FiraSans-Bold.woff'],
+              dest: 'sphinx_shoop_theme/static/fonts/',
+              filter: 'isFile'
+          },
         ]
       }
     },
@@ -157,7 +169,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
 
   grunt.registerTask('fonts', ['clean:fonts','copy:fonts']);
-  grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','browserify:dev','exec:build_sphinx','connect','open','watch']);
+  //ORIGINAL grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','browserify:dev','exec:build_sphinx','connect','open','watch']);
+  grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','browserify:dev','exec:build_sphinx','connect','watch']);
   grunt.registerTask('build', ['exec:bower_update','clean:build','sass:build','browserify:build','exec:build_sphinx']);
 }
 
