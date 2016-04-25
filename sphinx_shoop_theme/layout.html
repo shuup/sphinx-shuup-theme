@@ -180,7 +180,9 @@
   {% if theme_sticky_navigation %}
   <script type="text/javascript">
       jQuery(function () {
-          SphinxShoopTheme.StickyNav.enable();
+          if (typeof(SphinxRtdTheme) == 'undefined') {
+              SphinxShoopTheme.StickyNav.enable();
+          }
       });
   </script>
   {% endif %}
